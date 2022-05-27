@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,600;1,500&family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Outfit:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width:100%;
+    background-color: hsl(210, 46%, 95%);
+}
+
+.container{
+    margin: 0 auto;
+    display: grid;
+    width: 58vw;
+    height: 62.106vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "content1 content1 content2 content3"
+    "content4 content5 content5 content3";
+    grid-gap:1.5rem;
+    margin-top: 164px;    
+}
+
+#content1{
+background-color: hsl(263, 55%, 52%);
+grid-area:content1;
+border-radius: 10px;
+overflow: hidden;
+}
+
+#content2{
+    background-color: hsl(217, 19%, 35%);
+    grid-area:content2;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#content3{
+    background-color: hsl(0, 0%, 100%);
+    grid-area:content3;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#content4{
+    background-color: hsl(0, 0%, 100%);
+    grid-area:content4;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#content5{
+    background-color: hsl(219, 29%, 14%);
+    grid-area:content5;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+img{
+    position: absolute;
+    width: 32px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+header .head{
+    display: flex;    
+}
+
+header .head ul{
+    margin-top: 1.50rem;
+    margin-left: 4.375rem;
+}
+
+header .head ul li{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: hsl(0, 0%, 81%);
+}
+
+.container section .text-bold{
+    color:hsl(0, 0%, 81%);
+    margin-top: 1.4rem;
+    margin-left: 1.875rem;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 1.310rem;
+    font-weight: 600;
+}
+
+/*=======Daniel & Patric=======*/
+.container .a1 .text-light{
+    width: 29.375rem;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    margin-top: 1.440rem;
+    margin-left: 1.875rem;
+    font-size: 0.765rem;
+    font-weight: 400;
+    color: hsl(0, 0%, 81%);
+}
+
+/*=======jonathan========*/
+.container .a2 .text-light{
+    width: 11.900rem;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    margin-top: 1.440rem;
+    margin-left: 1.875rem;
+    font-size: 0.765rem;
+    font-weight: 400;
+    color: hsl(0, 0%, 81%);
+}
+
+/*=======kira & Jane========*/
+.container .a3 .text-light{
+    width: 11.900rem;
+    line-height: 1.4;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    margin-top: 1.440rem;
+    margin-left: 1.875rem;
+    font-size: 0.765rem;
+    font-weight: 400;
+    color: hsl(0, 1%, 63%);
+}
+
+@media only screen and (max-width:1200px) {
+    .container{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        margin-top:82px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "content1" "content2" "content3" "content4" "content5";
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .container{
+        margin-top: 0;
+        height: 100%;
+        width: 100%;        
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "content1" "content2" "content3" "content4" "content5";
+    }
+}
